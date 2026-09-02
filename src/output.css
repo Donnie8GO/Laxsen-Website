@@ -161,8 +161,14 @@
   }
 }
 @layer utilities {
+  .bg-\[\#1E293B\] {
+    background-color: #1E293B;
+  }
   .bg-\[\#388087\] {
     background-color: #388087;
+  }
+  .bg-\[\#F8F6F0\] {
+    background-color: #F8F6F0;
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
