@@ -161,10 +161,16 @@
   }
 }
 @layer utilities {
+  .bg-\[\#388087\] {
+    background-color: #388087;
+  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
   .text-center {
     text-align: center;
+  }
+  .text-\[\#F6F6F2\] {
+    color: #F6F6F2;
   }
 }
