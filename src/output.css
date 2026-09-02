@@ -163,6 +163,9 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -171,6 +174,15 @@
   }
   .flex-row {
     flex-direction: row;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .bg-\[\#1E293B\] {
     background-color: #1E293B;
