@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-400: oklch(70.7% 0.165 254.624);
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -162,6 +163,12 @@
   }
 }
 @layer utilities {
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .w-auto {
+    width: auto;
+  }
   .flex-row {
     flex-direction: row;
   }
