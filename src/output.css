@@ -171,6 +171,18 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .z-10 {
+    z-index: 10;
+  }
   .flex {
     display: flex;
   }
@@ -222,6 +234,9 @@
   .bg-\[\#0A1B3D\] {
     background-color: #0A1B3D;
   }
+  .bg-\[\#0A1B3D\]\/60 {
+    background-color: color-mix(in oklab, #0A1B3D 60%, transparent);
+  }
   .bg-\[\#000000\] {
     background-color: #000000;
   }
@@ -245,6 +260,15 @@
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .p-1 {
     padding: var(--spacing);
@@ -284,6 +308,9 @@
   }
   .text-\[\#F8F6F0\] {
     color: #F8F6F0;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
 }
 @property --tw-font-weight {
