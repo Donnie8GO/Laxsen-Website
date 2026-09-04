@@ -12,6 +12,7 @@
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --spacing: 0.25rem;
     --font-weight-extrabold: 800;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -204,17 +205,29 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .bg-\[\#000000\] {
+    background-color: #000000;
+  }
   .bg-\[\#1E293B\] {
     background-color: #1E293B;
   }
   .bg-\[\#388087\] {
     background-color: #388087;
   }
+  .bg-\[\#C5A059\] {
+    background-color: #C5A059;
+  }
   .bg-\[\#F8F6F0\] {
     background-color: #F8F6F0;
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
+  }
+  .p-1 {
+    padding: var(--spacing);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
