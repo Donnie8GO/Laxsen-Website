@@ -254,6 +254,9 @@
   .text-\[\#F6F6F2\] {
     color: #F6F6F2;
   }
+  .text-\[\#F8F6F0\] {
+    color: #F8F6F0;
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
