@@ -198,6 +198,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
+  }
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
@@ -206,6 +209,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .min-h-100 {
+    min-height: calc(var(--spacing) * 100);
   }
   .w-auto {
     width: auto;
@@ -302,6 +308,9 @@
   }
   .text-\[\#1E293B\] {
     color: #1E293B;
+  }
+  .text-\[\#E31B23\] {
+    color: #E31B23;
   }
   .text-\[\#F6F6F2\] {
     color: #F6F6F2;
