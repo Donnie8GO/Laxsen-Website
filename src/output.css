@@ -213,6 +213,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .bg-\[\#0A1B3D\] {
+    background-color: #0A1B3D;
+  }
   .bg-\[\#000000\] {
     background-color: #000000;
   }
@@ -230,6 +233,9 @@
   }
   .bg-\[\#F8F6F0\] {
     background-color: #F8F6F0;
+  }
+  .bg-\[\#F8FAFC\] {
+    background-color: #F8FAFC;
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
