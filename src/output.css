@@ -368,6 +368,9 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .text-\[\#0A1B3D\] {
+    color: #0A1B3D;
+  }
   .text-\[\#1E293B\] {
     color: #1E293B;
   }
@@ -388,6 +391,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .mix-blend-multiply {
+    mix-blend-mode: multiply;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
