@@ -17,6 +17,7 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -308,6 +309,9 @@
   .bg-\[\#E5C178\] {
     background-color: #E5C178;
   }
+  .bg-\[\#EFECE6\] {
+    background-color: #EFECE6;
+  }
   .bg-\[\#F0F7FF\] {
     background-color: #F0F7FF;
   }
@@ -369,6 +373,9 @@
   .p-20 {
     padding: calc(var(--spacing) * 20);
   }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
   .text-center {
     text-align: center;
   }
@@ -395,11 +402,21 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
   .text-\[\#0A1B3D\] {
     color: #0A1B3D;
   }
   .text-\[\#1E293B\] {
     color: #1E293B;
+  }
+  .text-\[\#8A8175\] {
+    color: #8A8175;
+  }
+  .text-\[\#C2A382\] {
+    color: #C2A382;
   }
   .text-\[\#E31B23\] {
     color: #E31B23;
