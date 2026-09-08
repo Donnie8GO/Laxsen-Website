@@ -392,6 +392,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
   .mix-blend-multiply {
     mix-blend-mode: multiply;
   }
