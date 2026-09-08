@@ -303,6 +303,9 @@
   .bg-\[\#F0F7FF\] {
     background-color: #F0F7FF;
   }
+  .bg-\[\#F0F7FF\]\/30 {
+    background-color: color-mix(in oklab, #F0F7FF 30%, transparent);
+  }
   .bg-\[\#F8F6F0\] {
     background-color: #F8F6F0;
   }
