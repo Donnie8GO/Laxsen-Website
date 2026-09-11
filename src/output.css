@@ -319,6 +319,9 @@
   .bg-\[\#EFECE6\] {
     background-color: #EFECE6;
   }
+  .bg-\[\#EFECE6\]\/75 {
+    background-color: color-mix(in oklab, #EFECE6 75%, transparent);
+  }
   .bg-\[\#F0F7FF\] {
     background-color: #F0F7FF;
   }
