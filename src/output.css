@@ -245,6 +245,9 @@
     --tw-scale-y: 200%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-row {
     flex-direction: row;
   }
