@@ -245,6 +245,10 @@
     --tw-scale-y: 200%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
+  .scale-y-500 {
+    --tw-scale-y: 500%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -411,6 +415,9 @@
   }
   .text-\[\#0A1B3D\] {
     color: #0A1B3D;
+  }
+  .text-\[\#1A2536\] {
+    color: #1A2536;
   }
   .text-\[\#1E293B\] {
     color: #1E293B;
