@@ -289,6 +289,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -300,6 +303,9 @@
   }
   .bg-\[\#000000\] {
     background-color: #000000;
+  }
+  .bg-\[\#1A2536\] {
+    background-color: #1A2536;
   }
   .bg-\[\#1E293B\] {
     background-color: #1E293B;
@@ -433,6 +439,9 @@
   }
   .text-\[\#E31B23\] {
     color: #E31B23;
+  }
+  .text-\[\#EFECE6\] {
+    color: #EFECE6;
   }
   .text-\[\#F6F6F2\] {
     color: #F6F6F2;
