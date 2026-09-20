@@ -193,6 +193,9 @@
   .z-10 {
     z-index: 10;
   }
+  .m-1 {
+    margin: var(--spacing);
+  }
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
