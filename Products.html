@@ -148,16 +148,17 @@
         slideshows.forEach(initSlideShow);
 
         function initSlideShow(slideshow) {
-            var slides = document.querySelectorAll('#${slideshow.id} [role="list"] .slide');
+            var slides = document.querySelectorAll('[role="list"] .slide');
 
-            var index = 0, time = 5000
+            var index = 0;
+            var time = 5000;
 
-            slides[index].classList.remove('active');
+            slides[index].classList.add('active');
 
             setInterval( () => {
                 slides[index].classList.remove('active');
 
-                index++;
+                index = (index + 1) % slides.length;
 
                 if (index === slides.length) index = 0;
 
