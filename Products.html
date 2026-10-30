@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="./src/output.css">
+    <style>
+        [data-component="slideshow"] .slide {
+            display: none;
+        }
+        [data-component="slideshow"] .slide.active {
+            display: block;
+        }
+    </style>
 </head>
 <body class="bg-[#EFECE6] font-serif">
     <header>
@@ -38,9 +46,7 @@
                                     <h1 class="text-3xl font-bold text-[#1A2536] p-1">Solar Glides & Zebras</h1>
                                     <h3 class="text-xl text-[#1A2536] p-1">The solar Glide Collection is one of the newest products in the Window Covering Industry. Available in several colours, sizes, and darkening abilities. </h3>
                                 </div>
-                                <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds1.webp" class="aspect-square">
-                                </div>
+                                <img src="./src/assets/blinds1.webp" class="w-12 scale-50 aspect-square">
                             </div>
                         </div>
                     </div>
@@ -56,9 +62,7 @@
                                     <h1 class="text-3xl font-bold text-[#1A2536] p-1">Solar Glides & Zebras</h1>
                                     <h3 class="text-xl text-[#1A2536] p-1">The solar Glide Collection is one of the newest products in the Window Covering Industry. Available in several colours, sizes, and darkening abilities. </h3>
                                 </div>
-                                <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds2.webp" class="aspect-square">
-                                </div>
+                                <img src="./src/assets/blinds2.webp" class="w-12 scale-50 aspect-square">
                             </div>
                         </div>
                     </div>
@@ -73,9 +77,7 @@
                                 <h1 class="text-3xl font-bold text-[#1A2536] p-1">Silhouettes & Vienna</h1>
                                 <h3 class="text-xl text-[#1A2536] p-1">Horizontal fabric vanes alternate with soft sheer fabric to offer a veiled but luminous vista to the outside when open. </h3>
                             </div>
-                            <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds3.webp" class="aspect-square">
-                                </div>
+                            <img src="./src/assets/blinds3.webp" class="w-12 scale-50 aspect-square">
                         </div>
                     </div>
 
@@ -89,9 +91,7 @@
                                 <h1 class="text-3xl font-bold text-[#1A2536] p-1">Silhouettes & Vienna</h1>
                                 <h3 class="text-xl text-[#1A2536] p-1">Horizontal fabric vanes alternate with soft sheer fabric to offer a veiled but luminous vista to the outside when open. </h3>
                             </div>
-                            <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds4.webp" class="aspect-square">
-                                </div>
+                            <img src="./src/assets/blinds4.webp" class="w-12 scale-50 aspect-square">
                         </div>
                     </div>
 
@@ -105,9 +105,7 @@
                                 <h1 class="text-3xl font-bold text-[#1A2536] p-1">Silhouettes & Vienna</h1>
                                 <h3 class="text-xl text-[#1A2536] p-1">Horizontal fabric vanes alternate with soft sheer fabric to offer a veiled but luminous vista to the outside when open. </h3>
                             </div>
-                            <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds5.webp" class="aspect-square">
-                                </div>
+                            <img src="./src/assets/blinds5.webp" class="w-12 scale-50 aspect-square">
                         </div>
                     </div>
 
@@ -121,9 +119,7 @@
                                 <h1 class="text-3xl font-bold text-[#1A2536] p-1">Silhouettes & Vienna</h1>
                                 <h3 class="text-xl text-[#1A2536] p-1">Horizontal fabric vanes alternate with soft sheer fabric to offer a veiled but luminous vista to the outside when open. </h3>
                             </div>
-                            <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds6.webp" class="aspect-square">
-                                </div>
+                            <img src="./src/assets/blinds6.webp" class="w-12 scale-50 aspect-square">
                         </div>
                     </div>
 
@@ -137,9 +133,7 @@
                                 <h1 class="text-3xl font-bold text-[#1A2536] p-1">Silhouettes & Vienna</h1>
                                 <h3 class="text-xl text-[#1A2536] p-1">Horizontal fabric vanes alternate with soft sheer fabric to offer a veiled but luminous vista to the outside when open. </h3>
                             </div>
-                            <div class="w-40 h-40 object-cover">
-                                    <img src="./src/assets/blinds7.webp" class="aspect-square">
-                                </div>
+                            <img src="./src/assets/blinds7.webp" class="w-12 scale-50">
                         </div>
                     </div>
 
@@ -148,6 +142,31 @@
             </div>
         </div>
     <hr class="my-8 border-t border-[#C2A382]">
+
+    <script>
+        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+        slideshows.forEach(initSlideShow);
+
+        function initSlideShow(slideshow) {
+            var slides = document.querySelectorAll('#${slideshow.id} [role="list"] .slide');
+
+            var index = 0, time = 5000
+
+            slides[index].classList.remove('active');
+
+            setInterval( () => {
+                slides[index].classList.remove('active');
+
+                index++;
+
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+
+            }, time);
+        }
+    </script>
+
     </section>
     <!--</section>
     The one below is the old one!
