@@ -36,7 +36,7 @@
     <hr class="my-8 border-t border-[#C2A382]">
     <div class="flex flex-row">
         <div class="w-xs grid place-items-center">
-            <button class="p-5 border-[#1A2536] text-[#1A2536] text-4xl bg-[#C2A382] rounded-full"> &lt; </button>
+            <button class="p-5 border-[#1A2536] text-[#1A2536] text-4xl bg-[#C2A382] rounded-full" id="buttonLeft"> &lt; </button>
         </div>
         <div id="slideshow-example" data-component="slideshow">
             <div role="list">
@@ -157,13 +157,15 @@
             </div>
         </div>
         <div class="w-xs grid place-items-center">
-            <button class="p-5 border-[#1A2536] text-[#1A2536] text-4xl bg-[#C2A382] rounded-full"> &gt; </button>
+            <button class="p-5 border-[#1A2536] text-[#1A2536] text-4xl bg-[#C2A382] rounded-full" id="buttonRight"> &gt; </button>
         </div>
     </div>
     <hr class="my-8 border-t border-[#C2A382]">
 
     <script>
         var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+        const left = document.getElementById('buttonLeft');
+        const right = document.getElementById('buttonRight');
         slideshows.forEach(initSlideShow);
 
         function initSlideShow(slideshow) {
@@ -184,6 +186,27 @@
                 slides[index].classList.add('active');
 
             }, time);
+
+            left.addEventListener('click', function() {
+                slides[index].classList.remove('active');
+
+                index = (index + 1) % slides.length;
+
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+            })
+
+            right.addEventListener('click', function() {
+                slides[index].classList.remove('active');
+
+                index = (index + 1) % slides.length;
+
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+            })
+
         }
     </script>
 
